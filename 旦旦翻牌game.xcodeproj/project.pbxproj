@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E6049596031D087636EE9D8 /* libPods-旦旦翻牌game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C54E337A1582EE5E0FBDCA7 /* libPods-旦旦翻牌game.a */; };
+		44BBDB7C25A9BCA900898945 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBDB7B25A9BCA900898945 /* AppDelegate.m */; };
+		44BBDB8725A9BCAC00898945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BBDB8625A9BCAC00898945 /* Assets.xcassets */; };
+		44BBDB8D25A9BCAC00898945 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBDB8C25A9BCAC00898945 /* main.m */; };
+		44BBDBCA25ABF9E600898945 /* JMJdandanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBDBC925ABF9E600898945 /* JMJdandanController.m */; };
+		44BBDBD125ABFC0900898945 /* JMJCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBDBD025ABFC0900898945 /* JMJCard.m */; };
+		44BBDBD925ABFE1F00898945 /* cardsList.json in Resources */ = {isa = PBXBuildFile; fileRef = 44BBDBD825ABFE1F00898945 /* cardsList.json */; };
+		44BBDBDF25AC20E000898945 /* JMJCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBDBDE25AC20E000898945 /* JMJCardCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C54E337A1582EE5E0FBDCA7 /* libPods-旦旦翻牌game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-旦旦翻牌game.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BBDB7725A9BCA900898945 /* 旦旦翻牌game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "旦旦翻牌game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BBDB7A25A9BCA900898945 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44BBDB7B25A9BCA900898945 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44BBDB8625A9BCAC00898945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44BBDB8B25A9BCAC00898945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BBDB8C25A9BCAC00898945 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44BBDBC825ABF9E600898945 /* JMJdandanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMJdandanController.h; sourceTree = "<group>"; };
+		44BBDBC925ABF9E600898945 /* JMJdandanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMJdandanController.m; sourceTree = "<group>"; };
+		44BBDBCF25ABFC0900898945 /* JMJCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMJCard.h; sourceTree = "<group>"; };
+		44BBDBD025ABFC0900898945 /* JMJCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMJCard.m; sourceTree = "<group>"; };
+		44BBDBD825ABFE1F00898945 /* cardsList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cardsList.json; sourceTree = "<group>"; };
+		44BBDBDD25AC20E000898945 /* JMJCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMJCardCell.h; sourceTree = "<group>"; };
+		44BBDBDE25AC20E000898945 /* JMJCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMJCardCell.m; sourceTree = "<group>"; };
+		44BBDBE325AC24CD00898945 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BDA0EBCB16CECBF5AE43397D /* Pods-旦旦翻牌game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-旦旦翻牌game.debug.xcconfig"; path = "Target Support Files/Pods-旦旦翻牌game/Pods-旦旦翻牌game.debug.xcconfig"; sourceTree = "<group>"; };
+		FA949230E09EC26C884EEBC2 /* Pods-旦旦翻牌game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-旦旦翻牌game.release.xcconfig"; path = "Target Support Files/Pods-旦旦翻牌game/Pods-旦旦翻牌game.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44BBDB7425A9BCA900898945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6049596031D087636EE9D8 /* libPods-旦旦翻牌game.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42E527B64B1E07C78DB38B67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDA0EBCB16CECBF5AE43397D /* Pods-旦旦翻牌game.debug.xcconfig */,
+				FA949230E09EC26C884EEBC2 /* Pods-旦旦翻牌game.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44BBDB6E25A9BCA900898945 = {
+			isa = PBXGroup;
+			children = (
+				44BBDB7925A9BCA900898945 /* 旦旦翻牌game */,
+				44BBDB7825A9BCA900898945 /* Products */,
+				42E527B64B1E07C78DB38B67 /* Pods */,
+				C195BB6F1000882B76EE50E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44BBDB7825A9BCA900898945 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BBDB7725A9BCA900898945 /* 旦旦翻牌game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44BBDB7925A9BCA900898945 /* 旦旦翻牌game */ = {
+			isa = PBXGroup;
+			children = (
+				44BBDBDC25AC20BA00898945 /* View */,
+				44BBDBCE25ABFBBA00898945 /* Model */,
+				44BBDBC725ABF97C00898945 /* Controller */,
+				44BBDB7A25A9BCA900898945 /* AppDelegate.h */,
+				44BBDB7B25A9BCA900898945 /* AppDelegate.m */,
+				44BBDB8625A9BCAC00898945 /* Assets.xcassets */,
+				44BBDBD825ABFE1F00898945 /* cardsList.json */,
+				44BBDB8B25A9BCAC00898945 /* Info.plist */,
+				44BBDB8C25A9BCAC00898945 /* main.m */,
+				44BBDBE325AC24CD00898945 /* PrefixHeader.pch */,
+			);
+			path = "旦旦翻牌game";
+			sourceTree = "<group>";
+		};
+		44BBDBC725ABF97C00898945 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44BBDBC825ABF9E600898945 /* JMJdandanController.h */,
+				44BBDBC925ABF9E600898945 /* JMJdandanController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44BBDBCE25ABFBBA00898945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44BBDBCF25ABFC0900898945 /* JMJCard.h */,
+				44BBDBD025ABFC0900898945 /* JMJCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44BBDBDC25AC20BA00898945 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44BBDBDD25AC20E000898945 /* JMJCardCell.h */,
+				44BBDBDE25AC20E000898945 /* JMJCardCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C195BB6F1000882B76EE50E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C54E337A1582EE5E0FBDCA7 /* libPods-旦旦翻牌game.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44BBDB7625A9BCA900898945 /* 旦旦翻牌game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BBDB9025A9BCAC00898945 /* Build configuration list for PBXNativeTarget "旦旦翻牌game" */;
+			buildPhases = (
+				3F03B06DA3B8CABF826BC406 /* [CP] Check Pods Manifest.lock */,
+				44BBDB7325A9BCA900898945 /* Sources */,
+				44BBDB7425A9BCA900898945 /* Frameworks */,
+				44BBDB7525A9BCA900898945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "旦旦翻牌game";
+			productName = "旦旦翻牌game";
+			productReference = 44BBDB7725A9BCA900898945 /* 旦旦翻牌game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44BBDB6F25A9BCA900898945 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JMJ;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					44BBDB7625A9BCA900898945 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 44BBDB7225A9BCA900898945 /* Build configuration list for PBXProject "旦旦翻牌game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44BBDB6E25A9BCA900898945;
+			productRefGroup = 44BBDB7825A9BCA900898945 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44BBDB7625A9BCA900898945 /* 旦旦翻牌game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44BBDB7525A9BCA900898945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BBDBD925ABFE1F00898945 /* cardsList.json in Resources */,
+				44BBDB8725A9BCAC00898945 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F03B06DA3B8CABF826BC406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-旦旦翻牌game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44BBDB7325A9BCA900898945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BBDB7C25A9BCA900898945 /* AppDelegate.m in Sources */,
+				44BBDB8D25A9BCAC00898945 /* main.m in Sources */,
+				44BBDBCA25ABF9E600898945 /* JMJdandanController.m in Sources */,
+				44BBDBDF25AC20E000898945 /* JMJCardCell.m in Sources */,
+				44BBDBD125ABFC0900898945 /* JMJCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		44BBDB8E25A9BCAC00898945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44BBDB8F25A9BCAC00898945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44BBDB9125A9BCAC00898945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA0EBCB16CECBF5AE43397D /* Pods-旦旦翻牌game.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A899P85UB8;
+				GCC_PREFIX_HEADER = "旦旦翻牌game/PrefixHeader.pch";
+				INFOPLIST_FILE = "旦旦翻牌game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IOStest.----game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44BBDB9225A9BCAC00898945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA949230E09EC26C884EEBC2 /* Pods-旦旦翻牌game.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A899P85UB8;
+				GCC_PREFIX_HEADER = "旦旦翻牌game/PrefixHeader.pch";
+				INFOPLIST_FILE = "旦旦翻牌game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IOStest.----game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44BBDB7225A9BCA900898945 /* Build configuration list for PBXProject "旦旦翻牌game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BBDB8E25A9BCAC00898945 /* Debug */,
+				44BBDB8F25A9BCAC00898945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BBDB9025A9BCAC00898945 /* Build configuration list for PBXNativeTarget "旦旦翻牌game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BBDB9125A9BCAC00898945 /* Debug */,
+				44BBDB9225A9BCAC00898945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44BBDB6F25A9BCA900898945 /* Project object */;
+}

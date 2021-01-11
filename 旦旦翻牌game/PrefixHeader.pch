@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  网易彩票
+//
+//  Created by HUST on 2020/12/28.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define jmjScreenSize [UIScreen mainScreen].bounds
+#define jmjScreenWidth [UIScreen mainScreen].bounds.size.width
+#define jmjScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+///Users/hust/Desktop/IOS项目/旦旦翻牌game/旦旦翻牌game/PrefixHeader.pch
