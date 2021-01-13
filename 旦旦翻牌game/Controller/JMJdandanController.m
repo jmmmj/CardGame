@@ -70,10 +70,10 @@ static NSString * const reuseIdentifier = @"card_cell";
     UICollectionViewFlowLayout *layout = ({
             
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(jmjScreenWidth/4-20,jmjScreenWidth/4-20);//每一个cell的大小
+        layout.itemSize = CGSizeMake(jmjScreenWidth/4-10,jmjScreenWidth/4-10);//每一个cell的大小
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;//滚动方向
 //            CGFloat margin = (jmjScreenWidth - 160) *0.5;
-        layout.sectionInset = UIEdgeInsetsMake(10,10,10,10);//四周的边距
+        layout.sectionInset = UIEdgeInsetsMake(5,5,5,5);//四周的边距
             //设置最小边距
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;
@@ -124,8 +124,12 @@ static NSString * const reuseIdentifier = @"card_cell";
         if(isEuqal==NSOrderedSame){
             //配对成功
             [self showAlert];
-            [_selectedCard1 remove];
-            [_selectedCard2 remove];
+            __block JMJCardCell* selectedCard1 = _selectedCard1;
+            __block JMJCardCell* selectedCard2 = _selectedCard2;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [selectedCard1 remove];
+                [selectedCard2 remove];
+             });
         }else{
             //配对失败
             __block JMJCardCell* selectedCard1 = _selectedCard1;
@@ -151,16 +155,6 @@ static NSString * const reuseIdentifier = @"card_cell";
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-
--(void)showError
-{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"系统提示" message:@"噢，这个配对是失败的！！" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-       handler:^(UIAlertAction * action) {}];
-
-    [alertController addAction:defaultAction];
-    [self presentViewController:alertController animated:YES completion:nil];
-}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
