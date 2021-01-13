@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)JMJCard *card;
 
 -(void)turnOver;
-
+-(void)remove;
+-(NSString*)getID;
 @end
 
 NS_ASSUME_NONNULL_END

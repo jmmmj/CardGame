@@ -13,7 +13,7 @@
 {
     JMJCard *card = [[self alloc]init];
     card.cardImage = dict[@"cardImage"];
-    card.label = @"default";
+    card.label = dict[@"cardImage"];
     return card;
     
 }

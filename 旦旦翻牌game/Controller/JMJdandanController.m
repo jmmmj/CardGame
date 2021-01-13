@@ -52,6 +52,7 @@ static NSString * const reuseIdentifier = @"card_cell";
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     self=[super initWithCollectionViewLayout:layout];
+    
     return self;
 }
 
@@ -91,19 +92,75 @@ static NSString * const reuseIdentifier = @"card_cell";
 //        [self.view addSubview:collectionV];
         collectionV;
     });
+    
     self.collectionView = collectionV;
 //    [collectionV registerNib:[UINib nibWithNibName:@"JMJProductCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    
     [collectionV registerClass:[JMJCardCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+//    for(int i=0;i<20;i++){
+//        NSString * reuseIdentifierx = [NSString stringWithFormat:@"cell%d",i];
+//        [collectionV registerClass:[JMJCardCell class] forCellWithReuseIdentifier:reuseIdentifierx];
+//    }
        
     
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    JMJCardCell * cardCell= self.collectionView.visibleCells[indexPath.row];
+    JMJCardCell * cardCell= self.collectionView.visibleCells[(indexPath.row+10)%20];
+    //不知道怎么解决错位问题
     [cardCell turnOver];
+    if(!_selectedCard1){
+        _selectedCard1=cardCell;
+    }else if (!_selectedCard2){
+        _selectedCard2=cardCell;
+        if(_selectedCard2==_selectedCard1){
+            _selectedCard1=nil;
+            _selectedCard2=nil;
+            return;
+        }
+        NSComparisonResult isEuqal=[[_selectedCard1 getID] compare:[_selectedCard2 getID]];
+        if(isEuqal==NSOrderedSame){
+            //配对成功
+            [self showAlert];
+            [_selectedCard1 remove];
+            [_selectedCard2 remove];
+        }else{
+            //配对失败
+            __block JMJCardCell* selectedCard1 = _selectedCard1;
+            __block JMJCardCell* selectedCard2 = _selectedCard2;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [selectedCard1 turnOver];
+                [selectedCard2 turnOver];
+             });
+            
+        }
+        _selectedCard1=nil;
+        _selectedCard2=nil;
+    }
 }
 
+-(void)showAlert
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"系统提示" message:@"恭喜你，完成了一组配对！！" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+       handler:^(UIAlertAction * action) {}];
+
+    [alertController addAction:defaultAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+
+-(void)showError
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"系统提示" message:@"噢，这个配对是失败的！！" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+       handler:^(UIAlertAction * action) {}];
+
+    [alertController addAction:defaultAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -120,6 +177,7 @@ static NSString * const reuseIdentifier = @"card_cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+//    NSString * reuseIdentifierx = [NSString stringWithFormat:@"cell%ld",(long)indexPath.row];
     JMJCardCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     cell.card = self.cards[indexPath.row];
