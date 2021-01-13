@@ -1,4 +1,4 @@
 # CardGame
-一个用OC编写的翻牌小游戏（未完成）
 
-遇到了UICollectionView选中cell错位的问题
+一个用OC编写的记忆翻牌小游戏  
+  点击可以翻开对应的卡牌，连续翻开两张卡牌，若相同则完成配对，不同则卡牌重新盖上，卡片在16-20张，使用UICollectionView，做一些适当的翻转特效与配对成功提示框，采用auto layout布局。
